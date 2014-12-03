@@ -1,0 +1,30 @@
+{
+  "name": "crubrand",
+  "version": "0.1.0",
+  "homepage": "https://github.com/CruGlobal/crubrand",
+  "authors": [
+    "James Dempsey <jimmy.dempsey@cru.com>"
+  ],
+  "description": "A Cru branded scss theme for web projects",
+  "main": "_crubrand.scss",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "scss",
+    "cru.org",
+    "css"
+  ],
+  "license": "Apache",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "*.css"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": ">= 3.3.1"
+  }
+}
