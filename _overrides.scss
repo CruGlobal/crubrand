@@ -7,18 +7,8 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000;
-$gray-darker:            lighten($gray-base, 13.5%); // #222
-$gray-dark:              lighten($gray-base, 20%);   // #333
-$gray:                   lighten($gray-base, 33.5%); // #555
-$gray-light:             lighten($gray-base, 46.7%); // #777
-$gray-lighter:           lighten($gray-base, 93.5%); // #eee
-
 $brand-primary:          $color-gold;
-$brand-success:          #5cb85c;
-$brand-info:             #5bc0de;
 $brand-warning:          lighten($color-orange, 10%);
-$brand-danger:           #d9534f;
 
 
 //== Scaffolding
@@ -45,12 +35,9 @@ $font-family-base:        "freight-sans-pro", "Helvetica Neue", Arial, Helvetica
 
 $font-size-base:          16px;
 
-$font-size-large:         ceil( $font-size-base * 1.25 );
-$font-size-small:         ceil( $font-size-base * 0.85 );
-
-$font-size-h1:            40px;
-$font-size-h2:            26px;
-$font-size-h3:            26px;
+$font-size-h1:            48px;
+$font-size-h2:            32px;
+$font-size-h3:            28px;
 $font-size-h4:            18px;
 $font-size-h5:            $font-size-base;
 $font-size-h6:            $font-size-base;
@@ -62,56 +49,20 @@ $line-height-base:         $line-height-pixel / $font-size-base;
 $line-height-computed:    floor( $font-size-base * $line-height-base );
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit;
 $headings-font-weight:    400;
 $headings-line-height:    100%;
-$headings-color:          inherit;
-
-
-//== Iconography
-//
-//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
-
-//** Load fonts from this directory.
-$icon-font-path:          "../fonts/";
-//** File name for all font files.
-$icon-font-name:          "glyphicons-halflings-regular";
-//** Element ID within SVG icon file.
-$icon-font-svg-id:        "glyphicons_halflingsregular";
 
 
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     6px;
-$padding-base-horizontal:   12px;
-
-$padding-large-vertical:    10px;
-$padding-large-horizontal:  16px;
-
-$padding-small-vertical:    5px;
-$padding-small-horizontal:  10px;
-
-$padding-xs-vertical:       1px;
-$padding-xs-horizontal:     5px;
-
-$line-height-large:         1.33;
-$line-height-small:         1.5;
+$padding-base-vertical:     $line-height-pixel / 4;
+$padding-base-horizontal:   $line-height-pixel / 2;
 
 $border-radius-base:        2px;
 $border-radius-large:       3px;
 $border-radius-small:       1px;
-
-//** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    #fff;
-//** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       $brand-primary;
-
-//** Width of the `border` for generating carets that indicator dropdowns.
-$caret-width-base:          4px;
-//** Carets increase slightly in size for larger components.
-$caret-width-large:         5px;
 
 
 //== Tables
@@ -144,28 +95,6 @@ $btn-font-weight:                normal;
 $btn-default-color:              #6d6e71;
 $btn-default-bg:                 rgba(229,229,229,0.35);
 $btn-default-border:             rgba(216,216,216,0.35);
-
-$btn-primary-color:              #fff;
-$btn-primary-bg:                 $brand-primary;
-$btn-primary-border:             darken($btn-primary-bg, 5%);
-
-$btn-success-color:              #fff;
-$btn-success-bg:                 $brand-success;
-$btn-success-border:             darken($btn-success-bg, 5%);
-
-$btn-info-color:                 #fff;
-$btn-info-bg:                    $brand-info;
-$btn-info-border:                darken($btn-info-bg, 5%);
-
-$btn-warning-color:              #fff;
-$btn-warning-bg:                 $brand-warning;
-$btn-warning-border:             darken($btn-warning-bg, 5%);
-
-$btn-danger-color:               #fff;
-$btn-danger-bg:                  $brand-danger;
-$btn-danger-border:              darken($btn-danger-bg, 5%);
-
-$btn-link-disabled-color:        $gray-light;
 
 
 //== Forms
@@ -344,9 +273,9 @@ $container-lg:                 $container-large-desktop;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px;
+$navbar-height:                    72px;
 $navbar-margin-bottom:             $line-height-computed;
-$navbar-border-radius:             $border-radius-base;
+$navbar-border-radius:             0;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
 $navbar-collapse-max-height:       340px;
@@ -356,10 +285,10 @@ $navbar-default-bg:                #fff;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%);
 
 // Navbar links
-$navbar-default-link-color:                #777;
-$navbar-default-link-hover-color:          #333;
+$navbar-default-link-color:                $color-text;
+$navbar-default-link-hover-color:          $color-blue-bright;
 $navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         #555;
+$navbar-default-link-active-color:         $color-blue-bright;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
 $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;
@@ -370,35 +299,8 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd;
-$navbar-default-toggle-icon-bar-bg:        #888;
-$navbar-default-toggle-border-color:       #ddd;
-
-
-// Inverted navbar
-// Reset inverted navbar basics
-$navbar-inverse-color:                      lighten($gray-light, 15%);
-$navbar-inverse-bg:                         #222;
-$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%);
-
-// Inverted navbar links
-$navbar-inverse-link-color:                 lighten($gray-light, 15%);
-$navbar-inverse-link-hover-color:           #fff;
-$navbar-inverse-link-hover-bg:              transparent;
-$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color;
-$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%);
-$navbar-inverse-link-disabled-color:        #444;
-$navbar-inverse-link-disabled-bg:           transparent;
-
-// Inverted navbar brand label
-$navbar-inverse-brand-color:                $navbar-inverse-link-color;
-$navbar-inverse-brand-hover-color:          #fff;
-$navbar-inverse-brand-hover-bg:             transparent;
-
-// Inverted navbar toggle
-$navbar-inverse-toggle-hover-bg:            #333;
-$navbar-inverse-toggle-icon-bar-bg:         #fff;
-$navbar-inverse-toggle-border-color:        #333;
+$navbar-default-toggle-icon-bar-bg:        $color-text;
+$navbar-default-toggle-border-color:       none;
 
 
 //== Navs
@@ -406,49 +308,30 @@ $navbar-inverse-toggle-border-color:        #333;
 //##
 
 //=== Shared nav styles
-$nav-link-padding:                          10px 15px;
-$nav-link-hover-bg:                         $gray-lighter;
-
-$nav-disabled-link-color:                   $gray-light;
-$nav-disabled-link-hover-color:             $gray-light;
+$nav-link-padding:                          5px 10px;
 
 //== Tabs
-$nav-tabs-border-color:                     #ddd;
+$nav-tabs-border-color:                     #e9e9e9;
 
-$nav-tabs-link-hover-border-color:          $gray-lighter;
-
-$nav-tabs-active-link-hover-bg:             $body-bg;
-$nav-tabs-active-link-hover-color:          $gray;
-$nav-tabs-active-link-hover-border-color:   #ddd;
-
-$nav-tabs-justified-link-border-color:            #ddd;
-$nav-tabs-justified-active-link-border-color:     $body-bg;
-
-//== Pills
-$nav-pills-border-radius:                   $border-radius-base;
-$nav-pills-active-link-hover-bg:            $component-active-bg;
-$nav-pills-active-link-hover-color:         $component-active-color;
+$nav-tabs-active-link-hover-bg:             $nav-tabs-border-color;
+$nav-tabs-active-link-hover-color:          $color-text;
+$nav-tabs-active-link-hover-border-color:   darken($nav-tabs-border-color, 5%);
 
 
 //== Pagination
 //
 //##
 
-$pagination-color:                     $link-color;
-$pagination-bg:                        #fff;
+$pagination-color:                     $color-text;
 $pagination-border:                    #ddd;
 
-$pagination-hover-color:               $link-hover-color;
-$pagination-hover-bg:                  $gray-lighter;
+$pagination-hover-color:               $link-color;
+$pagination-hover-bg:                  $body-bg;
 $pagination-hover-border:              #ddd;
 
 $pagination-active-color:              #fff;
 $pagination-active-bg:                 $brand-primary;
 $pagination-active-border:             $brand-primary;
-
-$pagination-disabled-color:            $gray-light;
-$pagination-disabled-bg:               #fff;
-$pagination-disabled-border:           #ddd;
 
 
 //== Pager
@@ -457,7 +340,7 @@ $pagination-disabled-border:           #ddd;
 
 $pager-bg:                             $pagination-bg;
 $pager-border:                         $pagination-border;
-$pager-border-radius:                  15px;
+$pager-border-radius:                  2px;
 
 $pager-hover-bg:                       $pagination-hover-bg;
 
@@ -476,27 +359,6 @@ $jumbotron-color:                inherit;
 $jumbotron-bg:                   $gray-lighter;
 $jumbotron-heading-color:        inherit;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5));
-
-
-//== Form states and alerts
-//
-//## Define colors for form feedback states and, by default, alerts.
-
-$state-success-text:             #3c763d;
-$state-success-bg:               #dff0d8;
-$state-success-border:           darken($state-success-bg, 5%);
-
-$state-info-text:                #31708f;
-$state-info-bg:                  #d9edf7;
-$state-info-border:              darken($state-info-bg, 7%);
-
-$state-warning-text:             #8a6d3b;
-$state-warning-bg:               #fcf8e3;
-$state-warning-border:           darken($state-warning-bg, 5%);
-
-$state-danger-text:              #a94442;
-$state-danger-bg:                #f2dede;
-$state-danger-border:            darken($state-danger-bg, 5%);
 
 
 //== Tooltips
@@ -689,142 +551,24 @@ $list-group-link-heading-color: #333;
 //##
 
 $panel-bg:                    #fff;
-$panel-body-padding:          15px;
-$panel-heading-padding:       10px 15px;
-$panel-footer-padding:        $panel-heading-padding;
-$panel-border-radius:         $border-radius-base;
-
-//** Border color for elements within panels
-$panel-inner-border:          #ddd;
-$panel-footer-bg:             #f5f5f5;
-
-$panel-default-text:          $gray-dark;
-$panel-default-border:        #ddd;
-$panel-default-heading-bg:    #f5f5f5;
-
-$panel-primary-text:          #fff;
-$panel-primary-border:        $brand-primary;
-$panel-primary-heading-bg:    $brand-primary;
-
-$panel-success-text:          $state-success-text;
-$panel-success-border:        $state-success-border;
-$panel-success-heading-bg:    $state-success-bg;
-
-$panel-info-text:             $state-info-text;
-$panel-info-border:           $state-info-border;
-$panel-info-heading-bg:       $state-info-bg;
-
-$panel-warning-text:          $state-warning-text;
-$panel-warning-border:        $state-warning-border;
-$panel-warning-heading-bg:    $state-warning-bg;
-
-$panel-danger-text:           $state-danger-text;
-$panel-danger-border:         $state-danger-border;
-$panel-danger-heading-bg:     $state-danger-bg;
-
-
-//== Thumbnails
-//
-//##
-
-//** Padding around the thumbnail image
-$thumbnail-padding:           4px;
-//** Thumbnail background color
-$thumbnail-bg:                $body-bg;
-//** Thumbnail border color
-$thumbnail-border:            #ddd;
-//** Thumbnail border radius
-$thumbnail-border-radius:     $border-radius-base;
-
-//** Custom text color for thumbnail captions
-$thumbnail-caption-color:     $text-color;
-//** Padding around the thumbnail caption
-$thumbnail-caption-padding:   9px;
-
-
-//== Wells
-//
-//##
-
-$well-bg:                     #f5f5f5;
-$well-border:                 darken($well-bg, 7%);
+$panel-body-padding:          $line-height-pixel / 2;
+$panel-heading-padding:       $line-height-pixel / 2.5 $line-height-pixel / 2;
 
 
 //== Badges
 //
 //##
-
-$badge-color:                 #fff;
-//** Linked badge text color on hover
-$badge-link-hover-color:      #fff;
-$badge-bg:                    $gray-light;
-
-//** Badge text color in active nav link
-$badge-active-color:          $link-color;
 //** Badge background color in active nav link
-$badge-active-bg:             #fff;
-
-$badge-font-weight:           bold;
-$badge-line-height:           1;
-$badge-border-radius:         10px;
+$badge-line-height:           100%;
+$badge-border-radius:         5px/10px;
 
 
 //== Breadcrumbs
 //
 //##
 
-$breadcrumb-padding-vertical:   8px;
-$breadcrumb-padding-horizontal: 15px;
-//** Breadcrumb background color
-$breadcrumb-bg:                 #f5f5f5;
-//** Breadcrumb text color
-$breadcrumb-color:              #ccc;
-//** Text color of current page in the breadcrumb
-$breadcrumb-active-color:       $gray-light;
-//** Textual separator for between breadcrumb elements
-$breadcrumb-separator:          "/";
-
-
-//== Carousel
-//
-//##
-
-$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
-
-$carousel-control-color:                      #fff;
-$carousel-control-width:                      15%;
-$carousel-control-opacity:                    .5;
-$carousel-control-font-size:                  20px;
-
-$carousel-indicator-active-bg:                #fff;
-$carousel-indicator-border-color:             #fff;
-
-$carousel-caption-color:                      #fff;
-
-
-//== Close
-//
-//##
-
-$close-font-weight:           bold;
-$close-color:                 #000;
-$close-text-shadow:           0 1px 0 #fff;
-
-
-//== Code
-//
-//##
-
-$code-color:                  #c7254e;
-$code-bg:                     #f9f2f4;
-
-$kbd-color:                   #fff;
-$kbd-bg:                      #333;
-
-$pre-bg:                      #f5f5f5;
-$pre-color:                   $gray-dark;
-$pre-border-color:            #ccc;
-$pre-scrollable-max-height:   340px;
+$breadcrumb-padding-vertical:   $line-height-pixel / 4;
+$breadcrumb-padding-horizontal: $line-height-pixel / 2;
 
 
 //== Type
