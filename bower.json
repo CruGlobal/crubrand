@@ -15,16 +15,18 @@
     "cru.org",
     "css"
   ],
-  "license": "Apache",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests",
-    "*.css"
+    "*.css",
+    "bootstrap-sass-official",
+    "jquery"
   ],
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1"
-  }
+  },
 }

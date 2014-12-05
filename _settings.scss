@@ -1,0 +1,39 @@
+$line-height-pixel: 29px;
+
+/**
+ * #COLORS
+ */
+$color-gold:            #ffc425;
+$color-gray:            #666062;
+$color-white:           #fff;
+$color-orange:          #dd7d1b;
+$color-blue-deep:       #007398;
+$color-blue-bright:     #3eb1c8;
+
+$color-primary:         $color-gold;
+$color-secondary:       $color-gray;
+
+$brand-primary:         $color-primary;
+
+$color-text:            #3a3a3a;
+
+
+
+/**
+ * #TYPOGRAPHY/HEADERS
+ */
+$font-ratio-header:     1.314159;
+
+$font-size-small-h1:    $font-size-h1 - 15px;
+$font-size-small-h2:    $font-size-h2 - 8px;
+$font-size-small-h3:    $font-size-h3 - 5px;
+$font-size-small-h4:    $font-size-h4 - 5px;
+$font-size-small-h5:    $font-size-h5 - 2px;
+
+
+/**
+ * #BUTTONS
+ */
+$btn-secondary-color:   #fff;
+$btn-secondary-bg:      $color-secondary;
+$btn-secondary-border:  #595455;
