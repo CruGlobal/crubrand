@@ -125,6 +125,7 @@
 
 @import "settings";
 @import "overrides";
+@import "generic/mixins";
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
 
@@ -134,8 +135,9 @@
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
-@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/scaffolding";
-@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/type";
+@import "bootstrap-variations/scaffolding";
+@import "bootstrap-variations/type";
+
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/code";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/tables";
@@ -148,7 +150,11 @@
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/button-groups";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/navs";
-@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/navbar";
+
+@import "bootstrap-variations/navbar";
+//@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/navbar";
+
+
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/breadcrumbs";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/pagination";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/pager";
@@ -174,6 +180,3 @@
 // Utility classes
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
-
-@import "base/scaffolding";
-@import "base/type";
