@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #MIXINS/BOX-MODEL
+\*------------------------------------*/
+
+/**
+ * Box Sizing
+ */
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}

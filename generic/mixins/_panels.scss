@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #MIXINS/PANELS
+\*------------------------------------*/
+
+@mixin panel-variant($border, $bg-color) {
+  border-color: $border;
+  
+  & > .panel-header {
+    background-color: $bg-color;
+    border-color: $border;
+  }
+  
+  & > .panel-footer {
+	  border-top-color: $bg-color;
+  }
+  
+}

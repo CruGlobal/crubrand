@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #MIXINS/LINKS
+\*------------------------------------*/
+/**
+ * Writes the typical link, button in one go
+ * Includes active and focus for accessibility 
+ * 
+ */
+@mixin psuedo(){
+	&:hover, &:focus, &:active{
+		@content;
+	}
+}
