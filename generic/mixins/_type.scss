@@ -17,7 +17,6 @@
     @if $line-height == true {
         line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
     }
-
 }
 
 /**

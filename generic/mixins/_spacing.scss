@@ -16,39 +16,39 @@ $base-vertical-grid: $base-spacing-unit / 4;
     @if $from >= 1 and $to <= 12{
         @for $i from $from through $to{
             .mt#{$i}{
-				margin-top: ($grid * $i);
-				margin-top: ($grid * $i)/$rem-base + rem;
-				@content
+                margin-top: ($grid * $i);
+                margin-top: ($grid * $i)/$rem-base + rem;
+                @content
             }
 
-			.mb#{$i}{
-				margin-bottom: ($grid * $i);
-				margin-bottom: ($grid * $i)/$rem-base + rem;
-				@content
+            .mb#{$i}{
+                margin-bottom: ($grid * $i);
+                margin-bottom: ($grid * $i)/$rem-base + rem;
+                @content
             }
 
-			.mtb#{$i}{
-				@extend .mt#{$i};
-				@extend .mb#{$i};
-			}
-			
-			.pt#{$i}{
-				padding-top: ($grid * $i);
-				padding-top: ($grid * $i)/$rem-base + rem;
-				@content
+            .mtb#{$i}{
+                @extend .mt#{$i};
+                @extend .mb#{$i};
             }
 
-			.pb#{$i}{
-				padding-bottom: ($grid * $i);
-				padding-bottom: ($grid * $i)/$rem-base + rem;
-				@content	
+            .pt#{$i}{
+                padding-top: ($grid * $i);
+                padding-top: ($grid * $i)/$rem-base + rem;
+                @content
             }
 
-			.ptb#{$i}{
-				@extend .pt#{$i};
-				@extend .pb#{$i};
-			}
-			
+            .pb#{$i}{
+                padding-bottom: ($grid * $i);
+                padding-bottom: ($grid * $i)/$rem-base + rem;
+                @content	
+            }
+
+            .ptb#{$i}{
+                @extend .pt#{$i};
+                @extend .pb#{$i};
+            }
+
         }
     }
 }

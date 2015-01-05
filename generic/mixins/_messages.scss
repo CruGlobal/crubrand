@@ -1,8 +1,0 @@
-/*------------------------------------*\
-    #MIXINS/MESSAGE
-\*------------------------------------*/
-
-@mixin message-variant($color, $background) {
-  color: $color;
-  background-color: $background;
-}
