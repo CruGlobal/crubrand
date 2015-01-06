@@ -6,8 +6,10 @@
  * Includes active and focus for accessibility 
  * 
  */
-@mixin link-psuedo(){
-    &:hover, &:focus, &:active{
+@mixin link-psuedo() {
+    &:hover, 
+    &:focus, 
+    &:active {
         @content;
     }
 }
