@@ -8,10 +8,11 @@
     list-style: none;
 }
 
-.block-list{
+.block-list {
     @extend %unstyled-list;
     
-    & > li, & > li > a {
+    > li, 
+    > li > a {
         display: block;
     } 
 }
@@ -20,7 +21,8 @@
 .bare-list {
     @extend %unstyled-list;
     
-    & > li, & > li > a {
+    > li, 
+    > li > a {
         display: inline-block;
     } 
 }

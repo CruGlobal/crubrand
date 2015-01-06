@@ -8,10 +8,12 @@
    `@include vendor(border-radius, 4px);`
  *
  */
-@mixin vendor($property, $value...){
-    -webkit-#{$property}:$value;
-       -moz-#{$property}:$value;
-        -ms-#{$property}:$value;
-         -o-#{$property}:$value;
-            #{$property}:$value;
+@mixin vendor($property, $value...) {
+    // scss-lint:disable VendorPrefixes, Indentation    
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+    // scss-lint:enable VendorPrefixes, Indentation          
 }

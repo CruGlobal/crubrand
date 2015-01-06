@@ -2,13 +2,14 @@
     #MIXINS/BUTTONS
 \*------------------------------------*/
 
+// scss-lint:disable VendorPrefixes, Indentation
 
 /**
 * Border Radius
 */
-@mixin border-corner-radius($vert, $horz, $radius: 3){
- -webkit-border-#{$vert}-#{$horz}-radius: $radius;
-         border-#{$vert}-#{$horz}-radius: $radius;
+@mixin border-corner-radius($vert, $horz, $radius: 3) {
+    -webkit-border-#{$vert}-#{$horz}-radius: $radius;
+            border-#{$vert}-#{$horz}-radius: $radius;
 }
  
 /* Top-Left Corner */
@@ -33,24 +34,24 @@
 
 /* Both Top Corners */
 @mixin border-top-radius($radius: $default-border-radius) {
-  @include border-top-left-radius($radius);
-  @include border-top-right-radius($radius); 
+    @include border-top-left-radius($radius);
+    @include border-top-right-radius($radius); 
 }
 
 /* Both Right Corners */
 @mixin border-right-radius($radius: $default-border-radius) {
-  @include border-top-right-radius($radius);
-  @include border-bottom-right-radius($radius); 
+    @include border-top-right-radius($radius);
+    @include border-bottom-right-radius($radius); 
 }
 
 /* Both Bottom Corners */
 @mixin border-bottom-radius($radius: $default-border-radius) {
-  @include border-bottom-left-radius($radius);
-  @include border-bottom-right-radius($radius); 
+    @include border-bottom-left-radius($radius);
+    @include border-bottom-right-radius($radius); 
 }
 
  /* Both Left Corners */
 @mixin border-left-radius($radius: $default-border-radius) {
-  @include border-top-left-radius($radius);
-  @include border-bottom-left-radius($radius); 
+    @include border-top-left-radius($radius);
+    @include border-bottom-left-radius($radius); 
 }

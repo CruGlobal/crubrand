@@ -7,7 +7,9 @@
  * Do not change the variable set
  * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
  */
+// scss-lint:disable NameFormat 
 $sizeValue: strip-units(16px);
+// scss-lint:enable NameFormat 
 
 @mixin rem-calc($property, $values) {
     $px : (); /* 3 */
@@ -21,36 +23,40 @@ $sizeValue: strip-units(16px);
         }
 
         @else { 
+            // scss-lint:disable NameFormat 
             $unit: unit($value);    /* 6 */
             $val: parseInt($value); /* 6 */
 
             @if $unit == "px" {  /* 7 */
-                $px : append($px,  $value);
+                $px : append($px, $value);
                 $rem: append($rem, ($val / $sizeValue + rem));
             }
 
             @if $unit == "rem" { /* 7 */
-                $px : append($px,  ($val * $sizeValue + px));
+                $px : append($px, ($val * $sizeValue + px));
                 $rem: append($rem, $value);
             }
+            // scss-lint:enable NameFormat 
         }
     }
   
     @if $px == $rem {     /* 8 */
         #{$property}: $px;  /* 9 */
-    } @else {
+    } 
+    
+    @else {
         #{$property}: $px;  /* 9 */
         #{$property}: $rem; /* 9 */
     }
 }
 
-@mixin rem($property, $size-value){
+@mixin rem($property, $size-value) {
     #{$property}: strip-units($size-value) * 1px;
     #{$property}: strip-units($size-value / $base-font-size) * 1rem;
 }
 
-@mixin em($property, $size-value){
-    #{$property}: strip-units($size-value / 16 ) * 1em;
+@mixin em($property, $size-value) {
+    #{$property}: strip-units($size-value / 16) * 1em;
 }
 
 

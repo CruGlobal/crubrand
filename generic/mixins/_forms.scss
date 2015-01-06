@@ -32,10 +32,14 @@
 
 // Webkit-style focus
 @mixin tab-focus() {
+    // scss-lint:disable DuplicateProperty 
+    
     // Default
     outline: thin dotted #333;
+    
     // Webkit
     outline: 5px auto -webkit-focus-ring-color;
+    
     outline-offset: -2px;
 }
 
@@ -43,11 +47,13 @@
 // User select
 // For selecting text on the page
 @mixin user-select($select) {
+    // scss-lint:disable VendorPrefixes Indentation  
     -webkit-user-select: $select;
        -moz-user-select: $select;
         -ms-user-select: $select; // IE10+
          -o-user-select: $select;
             user-select: $select;
+    // scss-lint:enable VendorPrefixes Indentation
 }
 
 // Form control focus state
@@ -64,11 +70,11 @@
 // contrast against a dark gray background.
 
 @mixin form-control-focus($color: $input-border-focus) {
-    $color-rgba: rgba(red($color), green($color), blue($color), .6);
+    $color-rgba: rgba(red($color), green($color), blue($color), 0.6);
 
     &:focus {
         border-color: $color;
         outline: 0;
-        //@include box-shadow(unquote("inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #{$color-rgba}"));
+        //@include box-shadow(unquote("inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #{$color-rgba}"));
     } 
 }

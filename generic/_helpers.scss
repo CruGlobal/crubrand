@@ -9,32 +9,43 @@
  *
  */
 
+// scss-lint:disable SingleLinePerProperty, SingleLinePerSelector, SpaceBeforeBrace
 
 /**
  * Add/remove floats
  */
-.float--right, %float--right    { float:right; }
-.float--left,  %float--left     { float:left ; }
-.float--none,  %float--none     { float:none ; }
+.float--right, %float--right { float: right; }
+.float--left,  %float--left  { float: left; }
+.float--none,  %float--none  { float: none; }
+
 
 
 /**
- * Text alignment and sizing
+ * Text alignment
  */
-.text--left,   %text--left       { text-align:left; }
-.text--center, %text--center     { text-align:center; }
-.text--right,  %text--right      { text-align:right; }
-.small-text,   %small-text       { font-size: 80%; }
+.text--left,   %text--left   { text-align: left; }
+.text--center, %text--center { text-align: center; }
+.text--right,  %text--right  { text-align: right; }
+
+
+
+/**
+ * Text Sizing
+ */
+.small-text,   %small-text { font-size: 80%; }
+
 
 
 /**
  * Font weights
  */
-.weight--light,      %weight--light       { font-weight:100; }
-.weight--semi-light, %weight--semilight   { font-weight:300; }
-.weight--normal,     %weight--normal      { font-weight:400; }
-.weight--semibold,   %weight--semibold    { font-weight:500; }
-.weight--bold,       %weight--bold        { font-weight:600; }
+.weight--light,      %weight--light     { font-weight: 100; }
+.weight--semi-light, %weight--semilight { font-weight: 300; }
+.weight--normal,     %weight--normal    { font-weight: 400; }
+.weight--semibold,   %weight--semibold  { font-weight: 500; }
+.weight--bold,       %weight--bold      { font-weight: 600; }
+
+
 
 /**
  * View helpers
@@ -43,39 +54,54 @@
 .overflow--show, %overflow--show { overflow: visible; }
 
 
+
 /**
  * Positioning
  */
 .position--absolute, %position--absolute { position: absolute; }
 .position--relative, %position--relative { position: relative; }
 .position--fixed,    %position--fixed    { position: fixed; }
-.position--t0,       %position--t0       { top: 0;}
+.position--t0,       %position--t0       { top:    0;}
 .position--b0,       %position--b0       { bottom: 0; }
-.position--l0,       %position--l0       { left: 0; }
-.position--r0,       %position--r0       { right: 0;}
+.position--l0,       %position--l0       { left:   0; }
+.position--r0,       %position--r0       { right:  0;}
+
+
 
 /**
  * Display
  */
-.display--block, %display--block               { display: block;}
+.display--block,        %display--block        { display: block;}
 .display--inline-block, %display--inline-block { display: inline-block;}
-.display--inline, %display--inline             { display: inline;}
-.display--none, %display--none                 { display: none;}
+.display--inline,       %display--inline       { display: inline;}
+.display--none,         %display--none         { display: none;}
 
 
 /**
  * Sizes
  */
 .full-height, %full-height {height: 100%;}
-.full-width, %full-width   {width: 100%;}
+.full-width, %full-width   {width:  100%;}
+
+// scss-lint:enable SingleLinePerProperty SingleLinePerSelector SpaceBeforeBrace
 
 /**
  * Content Alignment
  */
-%centered, .centered, 
-.center, %center { margin-left: auto; margin-right: auto;}
+.center, 
+%center,
+.centered, 
+%centered { 
+    margin-left: auto; 
+    margin-right: auto;
+}
 
-%center-block, .center-block { @extend %centered; @extend %full-width; @extend %text--center; }
+%center-block, 
+.center-block { 
+    @extend %centered; 
+    @extend %full-width; 
+    @extend %text--center; 
+}
 
 
 /**
@@ -89,13 +115,13 @@
 /**
  * Pull items full width of `.island` parents.
  */
-.full-bleed{
-    margin-right:-$base-line-height ;
-    margin-left: -$base-line-height ;
+.full-bleed {
+    margin-right: -$base-line-height;
+    margin-left:  -$base-line-height;
 
-    .islet &{
-        margin-right:-($base-line-height / 2);
-        margin-left: -($base-line-height / 2);
+    .islet & {
+        margin-right: -($base-line-height / 2);
+        margin-left:  -($base-line-height / 2);
     }
 }
 
@@ -104,7 +130,8 @@
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-.informative, %informative{
+.informative, 
+%informative {
     cursor: help;
 }
 
@@ -112,12 +139,14 @@
 /**
  * Mute an object by reducing its opacity.
  */
-.muted, %muted{
-    opacity:0.5;
-    filter:alpha(opacity = 50);
+.muted, 
+%muted {
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
 }
 
-.opaque, %opaque{
+.opaque, 
+%opaque {
     opacity: 1;
 }
 
@@ -128,16 +157,18 @@
    <a href=# class=go>Read more</a>
  *
  */
-.go:after, .go:after{
-    content:"\00A0" "\00BB";
+.go:after, 
+%go:after {
+    content: "\00A0" "\00BB";
 }
 
 
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-.caps, %caps{
-    text-transform:uppercase;
+.caps, 
+%caps {
+    text-transform: uppercase;
 }
 
 
@@ -145,27 +176,33 @@
  * Hide content off-screen without resorting to `display:none;`, also provide
  * breakpoint specific hidden elements.
  */
-@mixin accessibility{
-    border:0;
-    clip:rect(0 0 0 0);
-    height:1px;
-    margin:-1px;
-    overflow:hidden;
-    padding:0;
+@mixin accessibility {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
     position: absolute;
-    width:1px;
+    width: 1px;
 }
 
 .accessibility,
 %accessibility,
-.visuallyhidden{
+.visuallyhidden {
     @include accessibility;
 }
 
-.basic-transition, %basic-transition{ @include vendor(transition, 250ms ease) }
+.basic-transition, 
+%basic-transition { 
+    @include vendor(transition, 250ms ease) 
+}
 
-.decoration--none, %decoration--none{ text-decoration: none; }
+.decoration--none, 
+%decoration--none { 
+    text-decoration: none; 
+}
 
-  .box-shadow--thin {
-  @include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
+.box-shadow--thin {
+    @include vendor(box-shadow, 0 0 6px rgba(0, 0, 0, 0.2));
 }
