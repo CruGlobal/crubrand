@@ -141,13 +141,12 @@
  */
 .muted, 
 %muted {
-    opacity: 0.5;
-    filter: alpha(opacity = 50);
+    @include opacity(0.5);
 }
 
 .opaque, 
 %opaque {
-    opacity: 1;
+    @include opacity(1);
 }
 
 
@@ -195,7 +194,7 @@
 
 .basic-transition, 
 %basic-transition { 
-    @include vendor(transition, 250ms ease) 
+    @include transition(250ms ease);
 }
 
 .decoration--none, 
@@ -204,5 +203,5 @@
 }
 
 .box-shadow--thin {
-    @include vendor(box-shadow, 0 0 6px rgba(0, 0, 0, 0.2));
+    @include box-shadow(0 0 6px rgba(0, 0, 0, 0.2));
 }

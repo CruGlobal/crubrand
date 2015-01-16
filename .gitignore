@@ -5,3 +5,7 @@ bootstrap-sass-official
 jquery
 config.codekit
 crubrand.min.css.map
+docs/**
+docs/dist/css/crubrand.min.css.map
+.DS_Store
+.sass-cache
