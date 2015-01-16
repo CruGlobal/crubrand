@@ -11,8 +11,11 @@
  * }
  */
 @mixin font-size($font-size, $line-height: true) {
+    // scss-lint:disable DuplicateProperty
     font-size: $font-size;
     font-size: ($font-size / $font-size-base) * 1rem;
+    // scss-lint:enable DuplicateProperty
+    
 
     @if $line-height == true {
         line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
