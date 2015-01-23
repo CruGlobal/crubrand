@@ -141,7 +141,6 @@
 @import "bootstrap-variations/scaffolding";
 @import "bootstrap-variations/type";
 
-@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/code";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/tables";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/forms";
@@ -175,8 +174,8 @@
 
 // Components w/ JavaScript
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/modals";
-@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/tooltip";
-@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/popovers";
+//@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/tooltip";
+//@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/popovers";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
