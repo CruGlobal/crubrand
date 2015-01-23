@@ -13,8 +13,7 @@ dependencies in the relevant way.
 
 ## Installation
 
-The recommended installation method is Bower, but you can install the Media
-module via a Git Submodule, or copy and paste.
+The recommended installation method is Bower, but you can install the project via a Git Submodule, or copy and paste.
 
 ### Install using Bower:
 
