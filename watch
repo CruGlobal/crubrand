@@ -1,3 +1,0 @@
-#!/bin/sh
-
-sass --watch _crubrand.scss:docs/dist/css/crubrand.min.css --precision 9
