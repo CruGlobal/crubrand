@@ -63,8 +63,17 @@ $headings-line-height: 100%;
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:   $line-height-pixel / 4;
-$padding-base-horizontal: $line-height-pixel / 2;
+$padding-base-vertical:   floor($line-height-pixel / 6);
+$padding-base-horizontal: floor($line-height-pixel / 2);
+
+$padding-large-vertical:    floor($line-height-pixel / 2.2);
+$padding-large-horizontal:  floor($line-height-pixel / 1.2);
+
+$padding-small-vertical:    floor($line-height-pixel / 8);
+$padding-small-horizontal:  floor($line-height-pixel / 3);
+
+$padding-xs-vertical:       floor($line-height-pixel / 12);
+$padding-xs-horizontal:     floor($line-height-pixel / 4);
 
 $border-radius-base:      2px;
 $border-radius-large:     3px;
@@ -383,13 +392,13 @@ $nav-tabs-active-link-hover-border-color: darken($nav-tabs-border-color, 5%);
 $pagination-color:         $color-text;
 $pagination-border:        #ddd;
 
-$pagination-hover-color:   $link-color;
-$pagination-hover-bg:      $body-bg;
+$pagination-hover-color:   $color-white;
+$pagination-hover-bg:      $color-secondary;
 $pagination-hover-border:  #ddd;
 
 $pagination-active-color:  #fff;
-$pagination-active-bg:     $brand-primary;
-$pagination-active-border: $brand-primary;
+$pagination-active-bg:     $color-secondary;
+$pagination-active-border: darken($color-secondary, 10%);
 
 
 
@@ -674,8 +683,8 @@ $list-group-link-heading-color:  #333;
 //##
 
 $panel-bg:              #fff;
-$panel-body-padding:    $line-height-pixel / 2;
-$panel-heading-padding: $line-height-pixel / 2.5 $line-height-pixel / 2;
+$panel-body-padding:    $line-height-pixel;
+$panel-heading-padding: $line-height-pixel / 2.5 $line-height-pixel;
 
 
 

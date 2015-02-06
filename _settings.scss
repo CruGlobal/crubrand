@@ -46,6 +46,28 @@ $btn-secondary-color:   #fff;
 $btn-secondary-bg:      $color-secondary;
 $btn-secondary-border:  #595455;
 
+$btn-subtle-color:      #fff !default;
+$btn-subtle-bg:         $brand-primary !default;
+$btn-subtle-border:     darken($btn-primary-bg, 5%) !default;
+
+
+/**
+ * #SPACING
+ */
+$enable-margins:          true;
+$enable-margins--tiny:    false;
+$enable-margins--small:   false;
+$enable-margins--large:   false;
+$enable-margins--huge:    false;
+$enable-margins--none:    false;
+
+$enable-paddings:         false;
+$enable-paddings--tiny:   false;
+$enable-paddings--small:  false;
+$enable-paddings--large:  false;
+$enable-paddings--huge:   false;
+$enable-paddings--none:   false;
+
 /**
  * For use in calculations
  */
