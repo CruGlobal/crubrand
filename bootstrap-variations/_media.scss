@@ -1,7 +1,6 @@
 .media {
-  // Proper spacing between instances of .media
-  margin-bottom: $base-spacing-unit;
-
+    // Proper spacing between instances of .media
+    margin-bottom: $base-spacing-unit;
 }
 
 .media-right,
@@ -14,13 +13,13 @@
 .media-right,
 .media > .pull-right {
     float: right;
-    margin-left: half( $base-spacing-unit);
+    margin-left: half($base-spacing-unit);
 }
 
 .media-left,
 .media > .pull-left {
     float: left;
-    margin-right: half( $base-spacing-unit);
+    margin-right: half($base-spacing-unit);
 }
 
 .media-body {
@@ -28,23 +27,23 @@
 }
 
 .media-middle {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 .media-bottom {
-  vertical-align: bottom;
+    vertical-align: bottom;
 }
 
 // Reset margins on headings for tighter default spacing
 .media-heading {
-  margin-top: 0;
-  margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 // Media list variation
 //
 // Undo default ul/ol styles
 .media-list {
-  padding-left: 0;
-  list-style: none;
+    padding-left: 0;
+    list-style: none;
 }

@@ -23,13 +23,14 @@
             margin-left: 4px;
             border-radius: $border-radius-base;
         }
-            
+        
+        // scss-lint:disable NestingDepth    
         &:first-child {
             > a,
             > span {
-                margin-left: 0;
-                
-                @include border-left-radius($border-radius-base);
+            margin-left: 0;
+
+            @include border-left-radius($border-radius-base);
             }
         }
         
