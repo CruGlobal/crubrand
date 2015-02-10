@@ -18,7 +18,7 @@
     border: 2px solid transparent;
     white-space: nowrap;
 
-    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-base);
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $btn-font-size, $line-height-base, $border-radius-base);
     @include user-select(none);
 
     &,

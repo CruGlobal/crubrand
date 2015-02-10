@@ -46,6 +46,7 @@ h4, h5, h6,
 
 
 h1, .h1, %h1 { 
+    font-weight: $h1-font-weight;
     @include font-size($font-size-h1, false);
 }
 

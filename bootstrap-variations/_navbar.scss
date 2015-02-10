@@ -471,7 +471,7 @@ $gold-bar-size: 3px;
     background-color: $color-white;
     border-top: $gold-bar-size solid $color-gold;
     
-    @include box-shadow(0 0 2px rgba(6, 8, 8, 0.15));
+    @include box-shadow($navbar-box-shadow);
 
     @media (max-width: $grid-float-breakpoint-max) {
         // Dropdowns get custom display when collapsed

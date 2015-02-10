@@ -111,7 +111,7 @@ $table-border-color:            #ddd;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:    normal;
+$btn-font-weight:    bold;
 
 $btn-default-color:  #6d6e71;
 $btn-default-bg:     rgba(229, 229, 229, 0.35);
@@ -347,10 +347,10 @@ $navbar-default-border:              darken($navbar-default-bg, 6.5%);
 
 // Navbar links
 $navbar-default-link-color:          $color-text;
-$navbar-default-link-hover-color:    $color-blue-bright;
-$navbar-default-link-hover-bg:       transparent;
-$navbar-default-link-active-color:   $color-blue-bright;
-$navbar-default-link-active-bg:      darken($navbar-default-bg, 6.5%);
+$navbar-default-link-hover-color:    $color-gold;
+$navbar-default-link-hover-bg:       #404040;
+$navbar-default-link-active-color:   $color-gold;
+$navbar-default-link-active-bg:      #404040;
 $navbar-default-link-disabled-color: #ccc;
 $navbar-default-link-disabled-bg:    transparent;
 
@@ -685,7 +685,8 @@ $list-group-link-heading-color:  #333;
 $panel-bg:              #fff;
 $panel-body-padding:    $line-height-pixel;
 $panel-heading-padding: $line-height-pixel / 2.5 $line-height-pixel;
-
+$panel-border-radius:   $border-radius-base;
+$panel-box-shadow:      0 0px 6px rgba(0, 0, 0, 0.08);
 
 
 
