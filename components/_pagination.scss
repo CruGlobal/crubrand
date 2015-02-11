@@ -1,0 +1,16 @@
+/*------------------------------------*\
+ #PAGINATION
+\*------------------------------------*/
+
+.pagination__prev a:before,
+.pagination__next a:after {
+    font-size: 20px;  
+} 
+
+.pagination__prev a:before {
+    content: "\00AB" "\00A0";
+}
+
+.pagination__next a:after {
+    content: "\00A0" "\00BB";
+}

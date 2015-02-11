@@ -1,0 +1,207 @@
+/*------------------------------------*\
+    $HELPER
+\*------------------------------------*/
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ */
+
+// scss-lint:disable SingleLinePerProperty, SingleLinePerSelector, SpaceBeforeBrace
+
+/**
+ * Add/remove floats
+ */
+.float--right, %float--right { float: right; }
+.float--left,  %float--left  { float: left; }
+.float--none,  %float--none  { float: none; }
+
+
+
+/**
+ * Text alignment
+ */
+.text--left,   %text--left   { text-align: left; }
+.text--center, %text--center { text-align: center; }
+.text--right,  %text--right  { text-align: right; }
+
+
+
+/**
+ * Text Sizing
+ */
+.small-text,   %small-text { font-size: 80%; }
+
+
+
+/**
+ * Font weights
+ */
+.weight--light,      %weight--light     { font-weight: 100; }
+.weight--semi-light, %weight--semilight { font-weight: 300; }
+.weight--normal,     %weight--normal    { font-weight: 400; }
+.weight--semibold,   %weight--semibold  { font-weight: 500; }
+.weight--bold,       %weight--bold      { font-weight: 600; }
+
+
+
+/**
+ * View helpers
+ */
+.overflow--hide, %overflow--hide { overflow: hidden; }
+.overflow--show, %overflow--show { overflow: visible; }
+
+
+
+/**
+ * Positioning
+ */
+.position--absolute, %position--absolute { position: absolute; }
+.position--relative, %position--relative { position: relative; }
+.position--fixed,    %position--fixed    { position: fixed; }
+.position--t0,       %position--t0       { top:    0;}
+.position--b0,       %position--b0       { bottom: 0; }
+.position--l0,       %position--l0       { left:   0; }
+.position--r0,       %position--r0       { right:  0;}
+
+
+
+/**
+ * Display
+ */
+.display--block,        %display--block        { display: block;}
+.display--inline-block, %display--inline-block { display: inline-block;}
+.display--inline,       %display--inline       { display: inline;}
+.display--none,         %display--none         { display: none;}
+
+
+/**
+ * Sizes
+ */
+.full-height, %full-height {height: 100%;}
+.full-width, %full-width   {width:  100%;}
+
+// scss-lint:enable SingleLinePerProperty SingleLinePerSelector SpaceBeforeBrace
+
+/**
+ * Content Alignment
+ */
+.center, 
+%center,
+.centered, 
+%centered { 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+%center-block, 
+.center-block { 
+    @extend %centered; 
+    @extend %full-width; 
+    @extend %text--center; 
+}
+
+
+/**
+ * Borders
+ */
+.border-bottom-solid {
+    border-bottom: 1px solid lighten($color-black, 40%); 
+}
+
+
+/**
+ * Pull items full width of `.island` parents.
+ */
+.full-bleed {
+    margin-right: -$base-line-height;
+    margin-left:  -$base-line-height;
+
+    .islet & {
+        margin-right: -($base-line-height / 2);
+        margin-left:  -($base-line-height / 2);
+    }
+}
+
+
+/**
+ * Add a help cursor to any element that gives the user extra information on
+ * `:hover`.
+ */
+.informative, 
+%informative {
+    cursor: help;
+}
+
+
+/**
+ * Mute an object by reducing its opacity.
+ */
+.muted, 
+%muted {
+    @include opacity(0.5);
+}
+
+.opaque, 
+%opaque {
+    @include opacity(1);
+}
+
+
+/**
+ * Add a right-angled quote to links that imply movement, e.g.:
+ *
+   <a href=# class=go>Read more</a>
+ *
+ */
+.go:after, 
+%go:after {
+    content: "\00A0" "\00BB";
+}
+
+
+/**
+ * Apply capital case to an element (usually a `strong`).
+ */
+.caps, 
+%caps {
+    text-transform: uppercase;
+}
+
+
+/**
+ * Hide content off-screen without resorting to `display:none;`, also provide
+ * breakpoint specific hidden elements.
+ */
+@mixin accessibility {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.accessibility,
+%accessibility,
+.visuallyhidden {
+    @include accessibility;
+}
+
+.basic-transition, 
+%basic-transition { 
+    @include transition(250ms ease);
+}
+
+.decoration--none, 
+%decoration--none { 
+    text-decoration: none; 
+}
+
+.box-shadow--thin {
+    @include box-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+}
