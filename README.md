@@ -35,3 +35,9 @@ Once installed, `@import` into your project in its Objects layer:
 
 The least recommended option for installation is to simply download
 `crubrand` into your project and `@import` it into your project.
+
+    @import "crubrand/crubrand";
+
+## Updating crubrand using Bower
+
+    bower update crubrand
