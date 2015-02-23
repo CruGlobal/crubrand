@@ -2,6 +2,15 @@
  #IMAGES
 \*------------------------------------*/
 
-img, .panel-body iframe {
+img {
     @include img-responsive();
+}
+
+.panel-body iframe {
+    display: block;
+    max-width: 100%;
+    
+    @include mq(400px, max) {
+        height: auto;
+    }
 }
