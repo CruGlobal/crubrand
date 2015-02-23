@@ -2,6 +2,6 @@
  #IMAGES
 \*------------------------------------*/
 
-img {
+img, .panel-body iframe {
     @include img-responsive();
 }
