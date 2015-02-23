@@ -1,0 +1,67 @@
+/*------------------------------------*\
+ #TYPE
+\*------------------------------------*/
+
+.pullquote {
+    border-left-color: transparent;
+    margin: 48px 0;
+    text-align: center;
+    padding-left: 0;
+
+    @include transition(margin, 0.1s);
+    
+    @include mq(501px) {
+        margin: 48px -10px;
+    }
+
+    @include mq(1001px) {
+        margin: 48px -100px;
+    }
+
+    em, 
+    strong {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 110%;
+    }
+}
+	
+q,
+.blockquote em {
+    quotes:"“" "”";
+
+    &:before {
+        content: "“";
+        content: open-quote;
+    }
+
+    &:after {
+        content: "“";
+        content: close-quote;
+    }
+
+    q:before {
+        content: "“";
+        content: open-quote;
+    }
+
+    q:after {
+        content: "“";
+        content: close-quote;
+    }
+
+    /**
+     * If an element opens with an inline quote, let’s hang that.
+     */
+    &.opener {
+        display: inline-block;
+        
+        text-indent: -0.22em;
+    }
+	
+    &:first-child {
+        display: inline-block;
+        
+        text-indent: 0;
+    }
+}
