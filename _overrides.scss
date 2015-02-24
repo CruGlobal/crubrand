@@ -24,10 +24,10 @@ $body-bg:          #f7f7f7;
 $text-color:       $color-text;
 
 //** Global textual link color.
-$link-color:       $color-blue-bright;
+$link-color:       $color-blue-deep;
 
 //** Link hover color set via `darken()` function.
-$link-hover-color: $color-blue-deep;
+$link-hover-color: darken($link-color, 10%);
 
 
 
