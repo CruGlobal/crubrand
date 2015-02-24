@@ -2,6 +2,14 @@
  #PAGINATION
 \*------------------------------------*/
 
+.pagination__prev {
+    float: left;
+}
+
+.pagination__next {
+    float: right;
+}
+
 .pagination__prev a:before,
 .pagination__next a:after {
     font-size: 20px;  
