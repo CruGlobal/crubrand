@@ -389,16 +389,17 @@ $nav-tabs-active-link-hover-border-color: darken($nav-tabs-border-color, 5%);
 //
 //##
 
-$pagination-color:         $color-text;
-$pagination-border:        #ddd;
+$pagination-color:         $btn-subtle-color;
+$pagination-bg:            $btn-subtle-bg;
+$pagination-border:        $btn-subtle-border;
 
-$pagination-hover-color:   $color-white;
-$pagination-hover-bg:      $color-secondary;
-$pagination-hover-border:  #ddd;
+$pagination-hover-color:   $btn-subtle-state-color;
+$pagination-hover-bg:      $btn-subtle-state-bg;
+$pagination-hover-border:  $btn-subtle-state-border;
 
-$pagination-active-color:  #fff;
-$pagination-active-bg:     $color-secondary;
-$pagination-active-border: darken($color-secondary, 10%);
+$pagination-active-color:  $btn-subtle-state-color;
+$pagination-active-bg:     $btn-subtle-state-bg;
+$pagination-active-border: $btn-subtle-state-border;
 
 
 

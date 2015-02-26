@@ -9,9 +9,9 @@
 
 // Danger and error appear as red
 .btn-subtle {
-    color: #6d6e71;
-    background-color: #f4f4f4;
-    border-color: #e7e7e7;
+    color: $btn-subtle-color;
+    background-color: $btn-subtle-bg;
+    border-color: $btn-subtle-border;
     background-color: rgba(229,229,229,0.35);
     border-color: rgba(216,216,216,0.35);
 
@@ -21,9 +21,9 @@
     &:active,
     &.active,
     .open > &.dropdown-toggle {
-        color: #fff;
-        background-color: #666062;
-        border-color: #595455;
+        color: $btn-subtle-state-color;
+        background-color: $btn-subtle-state-bg;
+        border-color: $btn-subtle-state-border;
     }
     &:active,
     &.active,
