@@ -1,6 +1,11 @@
 /*------------------------------------*\
  #PAGINATION
 \*------------------------------------*/
+.pagination-secondary {
+    color: $btn-secondary-color;
+    background-color: $btn-secondary-bg;
+    border-color: $btn-secondary-border;
+}
 
 .pagination__prev {
     float: left;
