@@ -27,7 +27,7 @@
 }
 	
 q,
-blockquote em {
+blockquote:not(.pullquote) em {
     quotes:"“" "”";
 
     &:before {
