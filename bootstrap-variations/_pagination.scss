@@ -15,14 +15,7 @@
         > span {
             position: relative;
             //float: left; // Collapse white-space
-            padding: 8px $padding-base-horizontal;
-            line-height: $line-height-base;
-            text-decoration: none;
-            color: $pagination-color;
-            background-color: $pagination-bg;
-            border: 1px solid $pagination-border;
             margin-left: 4px;
-            border-radius: $border-radius-base;
         }
             
         &:first-child {
@@ -39,16 +32,6 @@
             > span {
                 @include border-right-radius($border-radius-base);
             }
-        }
-    }
-
-    > li > a,
-    > li > span {
-        &:hover,
-        &:focus {
-            color: $pagination-hover-color;
-            background-color: $pagination-hover-bg;
-            border-color: $pagination-hover-border;
         }
     }
 
