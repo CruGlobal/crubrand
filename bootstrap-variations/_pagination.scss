@@ -23,6 +23,8 @@
             border: 1px solid $pagination-border;
             margin-left: 4px;
             border-radius: $border-radius-base;
+            
+            @include transition(all 0.2s ease);
         }
             
         &:first-child {
