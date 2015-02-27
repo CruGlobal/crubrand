@@ -14,74 +14,74 @@
 /**
  * Add/remove floats
  */
-.float--right, %float--right { float: right; }
-.float--left,  %float--left  { float: left; }
-.float--none,  %float--none  { float: none; }
+.float--right, %float--right { float: right !important; }
+.float--left,  %float--left  { float: left !important; }
+.float--none,  %float--none  { float: none !important; }
 
 
 
 /**
  * Text alignment
  */
-.text--left,   %text--left   { text-align: left; }
-.text--center, %text--center { text-align: center; }
-.text--right,  %text--right  { text-align: right; }
+.text--left,   %text--left   { text-align: left !important; }
+.text--center, %text--center { text-align: center !important; }
+.text--right,  %text--right  { text-align: right !important; }
 
 
 
 /**
  * Text Sizing
  */
-.small-text,   %small-text { font-size: 80%; }
+.small-text,   %small-text { font-size: 80% !important; }
 
 
 
 /**
  * Font weights
  */
-.weight--light,      %weight--light     { font-weight: 100; }
-.weight--semi-light, %weight--semilight { font-weight: 300; }
-.weight--normal,     %weight--normal    { font-weight: 400; }
-.weight--semibold,   %weight--semibold  { font-weight: 500; }
-.weight--bold,       %weight--bold      { font-weight: 600; }
+.weight--light,      %weight--light     { font-weight: 100 !important; }
+.weight--semi-light, %weight--semilight { font-weight: 300 !important; }
+.weight--normal,     %weight--normal    { font-weight: 400 !important; }
+.weight--semibold,   %weight--semibold  { font-weight: 500 !important; }
+.weight--bold,       %weight--bold      { font-weight: 600 !important; }
 
 
 
 /**
  * View helpers
  */
-.overflow--hide, %overflow--hide { overflow: hidden; }
-.overflow--show, %overflow--show { overflow: visible; }
+.overflow--hide, %overflow--hide { overflow: hidden !important; }
+.overflow--show, %overflow--show { overflow: visible !important; }
 
 
 
 /**
  * Positioning
  */
-.position--absolute, %position--absolute { position: absolute; }
-.position--relative, %position--relative { position: relative; }
-.position--fixed,    %position--fixed    { position: fixed; }
-.position--t0,       %position--t0       { top:    0;}
-.position--b0,       %position--b0       { bottom: 0; }
-.position--l0,       %position--l0       { left:   0; }
-.position--r0,       %position--r0       { right:  0;}
+.position--absolute, %position--absolute { position: absolute !important; }
+.position--relative, %position--relative { position: relative !important; }
+.position--fixed,    %position--fixed    { position: fixed !important; }
+.position--t0,       %position--t0       { top:    0 !important;}
+.position--b0,       %position--b0       { bottom: 0 !important; }
+.position--l0,       %position--l0       { left:   0 !important; }
+.position--r0,       %position--r0       { right:  0 !important;}
 
 
 
 /**
  * Display
  */
-.display--block,        %display--block        { display: block;}
-.display--inline-block, %display--inline-block { display: inline-block;}
-.display--inline,       %display--inline       { display: inline;}
-.display--none,         %display--none         { display: none;}
+.display--block,        %display--block        { display: block !important;}
+.display--inline-block, %display--inline-block { display: inline-block !important;}
+.display--inline,       %display--inline       { display: inline !important;}
+.display--none,         %display--none         { display: none !important;}
 
 
 /**
  * Sizes
  */
-.full-height, %full-height {height: 100%;}
-.full-width, %full-width   {width:  100%;}
+.full-height, %full-height {height: 100% !important;}
+.full-width, %full-width   {width:  100% !important;}
 
 // scss-lint:enable SingleLinePerProperty SingleLinePerSelector SpaceBeforeBrace
 
@@ -92,8 +92,8 @@
 %center,
 .centered, 
 %centered { 
-    margin-left: auto; 
-    margin-right: auto;
+    margin-left: auto !important; 
+    margin-right: auto !important;
 }
 
 %center-block, 
@@ -108,7 +108,7 @@
  * Borders
  */
 .border-bottom-solid {
-    border-bottom: 1px solid lighten($color-black, 40%); 
+    border-bottom: 1px solid lighten($color-black, 40%) !important; 
 }
 
 
@@ -116,12 +116,12 @@
  * Pull items full width of `.island` parents.
  */
 .full-bleed {
-    margin-right: -$base-line-height;
-    margin-left:  -$base-line-height;
+    margin-right: -$base-line-height !important;
+    margin-left:  -$base-line-height !important;
 
     .islet & {
-        margin-right: -($base-line-height / 2);
-        margin-left:  -($base-line-height / 2);
+        margin-right: -($base-line-height / 2) !important;
+        margin-left:  -($base-line-height / 2) !important;
     }
 }
 
@@ -132,7 +132,7 @@
  */
 .informative, 
 %informative {
-    cursor: help;
+    cursor: help !important;
 }
 
 
@@ -158,7 +158,7 @@
  */
 .go:after, 
 %go:after {
-    content: "\00A0" "\00BB";
+    content: "\00A0" "\00BB"  !important;
 }
 
 
@@ -167,7 +167,7 @@
  */
 .caps, 
 %caps {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 
 
@@ -199,7 +199,7 @@
 
 .decoration--none, 
 %decoration--none { 
-    text-decoration: none; 
+    text-decoration: none !important; 
 }
 
 .box-shadow--thin {
