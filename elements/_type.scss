@@ -72,3 +72,7 @@ figcaption {
     margin: 0.26316rem 0 0.78947rem;
     @include font-size(14px, false);
 }
+
+.section-divider {
+    border-color: #f9b625;
+}
