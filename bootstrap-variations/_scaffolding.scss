@@ -114,6 +114,7 @@ hr {
     margin-bottom: $line-height-computed * 2;
     border: 0;
     border-top: 1px solid $hr-border;
+    border-color: rgba(0,0,0,0.15);
 }
 
 
