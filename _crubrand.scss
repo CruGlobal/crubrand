@@ -137,18 +137,27 @@
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/print";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/glyphicons";
 
-// Core CSS
+/**
+ * Crubrand Overrides to Bootstrap Files
+ */
 @import "bootstrap-variations/scaffolding";
 @import "bootstrap-variations/type";
+
+/**
+ * Crubrand Base Files
+ */
 @import "base/type";
+@import "base/images";
+@import "base/figcaption";
+@import "base/quotes";
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/tables";
+
+
+/* Crubrand variation of bootstrap's forms and buttons */
 @import "bootstrap-variations/forms";
 @import "bootstrap-variations/buttons";
-
-// Cru Buttons
-@import "modules/buttons";
 
 
 // Components
@@ -158,14 +167,15 @@
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/navs";
 
-@import "modules/lists";
+
+/* Crubrand variation of bootstrap's navbar */
 @import "bootstrap-variations/navbar";
-@import "base/images";
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/breadcrumbs";
 
+/* Crubrand variation of bootstrap's pagination */
 @import "bootstrap-variations/pagination";
-@import "modules/pagination";
+
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/pager";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/labels";
@@ -175,24 +185,47 @@
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/alerts";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/progress-bars";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/media";
-
-//@import "bootstrap-variations/media";
-
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/list-group";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/panels";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-embed";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/wells";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/close";
 
-// Components w/ JavaScript
+//@import "bootstrap-variations/media";
+
+
+/**
+ * Crubrand Modules
+ */
+@import "modules/buttons";
+@import "modules/cru-logo";
+@import "modules/cruicons";
+@import "modules/layout";
+@import "modules/list-bare";
+@import "modules/list-inline";
+@import "modules/list-block";
+@import "modules/list-ui";
+@import "modules/pagination";
+@import "modules/pullquotes";
+
+
+/** 
+ * Bootstrap Components w/ JavaScript
+ */
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/modals";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/tooltip";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/popovers";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/carousel";
 
-// Utility classes
+/**
+ * Bootstrap Utility Classes
+ */
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
 
+
+/**
+ * Crubrand Overrides
+ */
 @import "generic/helpers";
 @import "generic/spacing";
