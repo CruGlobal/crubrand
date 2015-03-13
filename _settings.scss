@@ -1,92 +1,12 @@
 /*------------------------------------*\
- #SETTINGS
+    #SETTINGS
 \*------------------------------------*/
 
-$font-size-base:    16px;
-
-$base-font-size:    $font-size-base;
-$line-height-pixel: 29px;
-
-/**
- * #COLORS
- */
-$color-gold:            #f9b625;
-$color-gray:            #666062;
-$color-white:           #fff;
-$color-orange:          #dd7d1b;
-$color-blue-deep:       #007398;
-$color-blue-bright:     #3eb1c8;
-
-$color-primary:         $color-gold;
-$color-secondary:       $color-gray;
-
-$brand-primary:         $color-primary;
-
-$color-info:            $brand-info;
-$color-success:         $brand-success;
-$color-warning:         $brand-warning;
-$color-danger:          $brand-danger;
-
-$color-background:      #f7f7f7;
-$color-text:            #3a3a3a;
-$color-black:           #000;
-
-
-
-/**
- * #HEADINGS
- */
-$font-ratio-header:     1.314159;
-
-$h1-font-weight:        lighter;
-
-$font-size-small-h1:    $font-size-h1 - 15px;
-$font-size-small-h2:    $font-size-h2 - 8px;
-$font-size-small-h3:    $font-size-h3 - 5px;
-$font-size-small-h4:    $font-size-h4 - 5px;
-$font-size-small-h5:    $font-size-h5 - 2px;
-
-
-/**
- * #BUTTONS
- */
-$btn-font-size:           16px;
-$btn-border-size:         1px;
-
-$btn-secondary-color:     #fff;
-$btn-secondary-bg:        $color-secondary;
-$btn-secondary-border:    #595455;
-
-$btn-subtle-color:        #6d6e71;
-$btn-subtle-bg:           #f4f4f4;
-$btn-subtle-border:       #e7e7e7;
-$btn-subtle-state-color:  $color-white;
-$btn-subtle-state-bg:     #666062;
-$btn-subtle-state-border: #595455;
-
-
-/**
- * #NAVBAR
- */
-$navbar-box-shadow:     0 0 6px rgba(6,8,8,0.15);
-
-
-/**
- * #SPACING
- */
-$enable-margins:          true;
-$enable-margins--tiny:    false;
-$enable-margins--small:   false;
-$enable-margins--large:   false;
-$enable-margins--huge:    false;
-$enable-margins--none:    false;
-
-$enable-paddings:         false;
-$enable-paddings--tiny:   false;
-$enable-paddings--small:  false;
-$enable-paddings--large:  false;
-$enable-paddings--huge:   false;
-$enable-paddings--none:   false;
+@import "variables/colors";
+@import "variables/buttons";
+@import "variables/type";
+@import "variables/box-shadows";
+@import "variables/spacing";
 
 /**
  * For use in calculations

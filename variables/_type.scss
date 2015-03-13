@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #VARIABLES/TYPE
+\*------------------------------------*/
+
+/**
+ * Base Type Settings
+ */
+$font-size-base:    16px;
+
+$base-font-size:    $font-size-base;
+$line-height-pixel: 29px;
+
+
+
+/**
+ * Font Weights
+ */
+$font-weight-1: 100;
+// $font-weight-2: 200;
+$font-weight-3: 300;
+$font-weight-4: 400;
+$font-weight-5: 500;
+$font-weight-6: 600;
+// $font-weight-7: 700;
+// $font-weight-8: 800;
+// $font-weight-9: 900;
+
+
+
+/**
+ * Headings
+ */
+$font-ratio-header:     1.314159;
+
+$h1-font-weight:        lighter;
+
+$font-size-small-h1:    $font-size-h1 - 15px;
+$font-size-small-h2:    $font-size-h2 - 8px;
+$font-size-small-h3:    $font-size-h3 - 5px;
+$font-size-small-h4:    $font-size-h4 - 5px;
+$font-size-small-h5:    $font-size-h5 - 2px;
+
