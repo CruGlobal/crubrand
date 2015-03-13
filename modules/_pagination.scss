@@ -1,11 +1,48 @@
 /*------------------------------------*\
- #PAGINATION
+    #PAGINATION
 \*------------------------------------*/
-.pagination-secondary li a {
+
+.pagination--secondary li a {
     color: $btn-secondary-color;
     background-color: $btn-secondary-bg;
     border-color: $btn-secondary-border;
 }
+/**
+ * Old
+
+.pagination-secondary li a {
+
+}
+*/
+
+
+/**
+ * Should Just use .pull-[right/left]
+ */
+.pagination-prev {
+    float: left;
+    
+    a:before {
+        content: "\00AB" "\00A0";
+    }
+    
+}
+
+.pagination-next {
+    float: right;
+    
+    a:after {
+        content: "\00A0" "\00BB";
+    }
+}
+
+.pagination-prev a:before,
+.pagination-next a:after {
+    font-size: 20px;  
+} 
+
+/**
+ * Old
 
 .pagination__prev {
     float: left;
@@ -27,3 +64,5 @@
 .pagination__next a:after {
     content: "\00A0" "\00BB";
 }
+
+*/ 
