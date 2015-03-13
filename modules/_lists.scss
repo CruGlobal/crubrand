@@ -1,16 +1,15 @@
 /*------------------------------------*\
- #LISTS
+    #LISTS
 \*------------------------------------*/
 
-%unstyled-list {
+.listUnstyled,
+%listUnstyled {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.block-list {
-    @extend %unstyled-list;
-    
+.listUnstyled--block {    
     > li, 
     > li > a {
         display: block;
@@ -18,9 +17,7 @@
 }
 
 .nav,
-.bare-list {
-    @extend %unstyled-list;
-    
+.listUnstyled--bare {    
     > li, 
     > li > a {
         display: inline-block;

@@ -1,13 +1,11 @@
 /*------------------------------------*\
- #BUTTONS
+    #BUTTONS
 \*------------------------------------*/
 
-// Danger and error appear as red
 .btn-secondary {
   @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
 }
 
-// Danger and error appear as red
 .btn-subtle {
     color: $btn-subtle-color;
     background-color: $btn-subtle-bg;

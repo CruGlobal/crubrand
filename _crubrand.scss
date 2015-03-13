@@ -120,7 +120,7 @@
 /*------------------------------------*\
  #IMPORTS
 \*------------------------------------*/
-@import "bourbon/bourbon";
+@import "generic/bourbon/bourbon";
 
 // Core variables and mixins
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
@@ -140,7 +140,7 @@
 // Core CSS
 @import "bootstrap-variations/scaffolding";
 @import "bootstrap-variations/type";
-@import "elements/type";
+@import "base/type";
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/tables";
@@ -148,7 +148,7 @@
 @import "bootstrap-variations/buttons";
 
 // Cru Buttons
-@import "components/buttons";
+@import "modules/buttons";
 
 
 // Components
@@ -158,14 +158,14 @@
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/navs";
 
-@import "components/lists";
+@import "modules/lists";
 @import "bootstrap-variations/navbar";
-@import "elements/images";
+@import "base/images";
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/breadcrumbs";
 
 @import "bootstrap-variations/pagination";
-@import "components/pagination";
+@import "modules/pagination";
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/pager";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/labels";
