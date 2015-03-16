@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #LIST-BLOCK
+\*------------------------------------*/
+
+.listBlock,
+.listBlock {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        @extend %list-block__item;
+    }
+
+}
+
+.listBlock-item,
+%listBlock-item {
+    padding: $base-spacing-unit; 
+}
