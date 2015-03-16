@@ -20,19 +20,19 @@ $listInlineDelimitCharacter:   ",\00A0" !default;
     }
 }
 
-    /**
-     * Comma delimited list to semantically mark up lists of tags, etc.
-     *
-     * N.B. This component requires that you remove the whitespace between LIs.
-     *      The simplest (and valid) way to achieve this is by omitting the
-     *      closing `</li>` tag.
-     */
+/**
+ * Comma delimited list to semantically mark up lists of tags, etc.
+ *
+ * N.B. This component requires that you remove the whitespace between LIs.
+ *      The simplest (and valid) way to achieve this is by omitting the
+ *      closing `</li>` tag.
+ */
 
-    .listInline--delimited,
-    %listInline--delimited {
-        > li + li {
-            &:before {
-                content: "#{$listInlineDelimitCharacter}";
-            }
+.listInline--delimited,
+%listInline--delimited {
+    > li + li {
+        &:before {
+            content: "#{$listInlineDelimitCharacter}";
         }
     }
+}

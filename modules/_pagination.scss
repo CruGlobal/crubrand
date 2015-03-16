@@ -2,67 +2,37 @@
     #PAGINATION
 \*------------------------------------*/
 
+/**
+ * This is to override bootstraps specifity of pagiation. Normally this
+ * level of nesting would not be allowed. 
+ */
 .pagination--secondary li a {
     color: $btn-secondary-color;
     background-color: $btn-secondary-bg;
     border-color: $btn-secondary-border;
 }
-/**
- * Old
-
-.pagination-secondary li a {
-
-}
-*/
 
 
-/**
- * Should Just use .pull-[right/left]
- */
 .pagination-prev {
-    float: left;
-    
-    a:before {
-        content: "\00AB" "\00A0";
-    }
-    
+    float: left;  
 }
 
-.pagination-next {
-    float: right;
-    
-    a:after {
-        content: "\00A0" "\00BB";
-    }
-}
-
-.pagination-prev a:before,
-.pagination-next a:after {
-    font-size: 20px;  
-} 
-
-/**
- * Old
-
-.pagination__prev {
-    float: left;
-}
-
-.pagination__next {
-    float: right;
-}
-
-.pagination__prev a:before,
-.pagination__next a:after {
-    font-size: 20px;  
-} 
-
-.pagination__prev a:before {
+.pagination-prev-link:before {
     content: "\00AB" "\00A0";
 }
 
-.pagination__next a:after {
+
+
+.pagination-next {
+    float: right;
+}
+
+.pagination-prev-link:after {
     content: "\00A0" "\00BB";
 }
 
-*/ 
+
+.pagination-prev-link:before,
+.pagination-prev-link:after {
+    font-size: 20px;  
+} 

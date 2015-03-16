@@ -1,6 +1,13 @@
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
+/**
+ * Button types are modifiers not children and should be using the
+ * `--` naming convention. However, they have been written this way
+ * to match Bootstraps convention. Hopefully this will change in the
+ * future. 
+ */
+
 
 .btn-secondary {
   @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
