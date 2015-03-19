@@ -9,12 +9,12 @@
     list-style: none;
 
     > li {
-        @extend %list-block__item;
+        @extend %listBlock-item;
     }
 
 }
 
 .listBlock-item,
 %listBlock-item {
-    padding: $base-spacing-unit; 
+    padding: $base-spacing-unit;
 }

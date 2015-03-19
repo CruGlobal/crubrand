@@ -9,8 +9,8 @@
  *
  * Be sure read the warning before continuing to edit or add any new
  * styles. In addition, be sure to change the variables to turn off
- * demo mode and debug mode before pushing to production. 
- * 
+ * demo mode and debug mode before pushing to production.
+ *
  */
 
 
@@ -108,15 +108,15 @@
   #WARNING
 \*------------------------------------*/
 /**
- * Custom styles for cru.org are meant to be place in the elements folder. 
+ * Custom styles for cru.org are meant to be place in the elements folder.
  * They should be as specific to cru as possible and mainly ui related.
  *
  */
 
 
 
-  
- 
+
+
 /*------------------------------------*\
  #IMPORTS
 \*------------------------------------*/
@@ -146,7 +146,6 @@
 /**
  * Crubrand Base Files
  */
-@import "base/type";
 @import "base/images";
 @import "base/figcaption";
 @import "base/quotes";
@@ -207,9 +206,10 @@
 @import "modules/list-ui";
 @import "modules/pagination";
 @import "modules/pullquotes";
+@import "modules/rules";
 
 
-/** 
+/**
  * Bootstrap Components w/ JavaScript
  */
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/modals";
