@@ -62,30 +62,30 @@
  */
 .u-floatLeft, %u-floatLeft { float: left !important; }
 .u-floatRight, %u-floatRight { float: right !important; }
+.u-floatNone, %u-floatNone { float: none !important; }
+
 
 
 /**
  * Sizes
  */
-.full-height, %full-height { height: 100% !important;}
-.full-width, %full-width   { width:  100% !important;}
+.u-fullHeight, %u-fullHeight { height: 100% !important;}
+.u-fullWidth, %u-fullWidth   { width:  100% !important;}
 
 // scss-lint:enable SingleLinePerProperty SingleLinePerSelector SpaceBeforeBrace
 
 /**
  * Content Alignment
  */
-.center, 
-%center,
-.centered, 
-%centered { 
-    margin-left: auto !important; 
+.u-center, %u-center,
+.u-centered, %u-centered {
+    margin-left: auto !important;
     margin-right: auto !important;
 }
 
-%center-block, 
-.center-block { 
-    @extend %centered; 
-    @extend %full-width; 
-    @extend %u-textCenter; 
+%u-centerBlock,
+.u-centerBlock {
+    @extend %u-centered;
+    @extend %u-fullWidth;
+    @extend %u-textCenter;
 }

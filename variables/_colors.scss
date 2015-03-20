@@ -5,43 +5,35 @@
 /**
  * Cru Colors
  */
-$color-gold:            #f9b625;
-$color-gray:            #666062;
-$color-white:           #fff;
-$color-orange:          #dd7d1b;
-$color-blue-deep:       #007398;
-$color-blue-bright:     #3eb1c8;
-
-$color-background:      #f7f7f7;
-$color-text:            #3a3a3a;
-$color-black:           #000;
-
+$colorCru-gold:       #f9b625;
+$colorCru-gray:       #666062;
+$colorCru-white:      #fff;
+$colorCru-orange:     #dd7d1b;
+$colorCru-blueDeep:   #007398;
+$colorCru-blueBright: #3eb1c8;
 
 
 /**
  * Helpers
  */
-$color-info:            $brand-info;
-$color-success:         $brand-success;
-$color-warning:         $brand-warning;
-$color-danger:          $brand-danger;
-
+$colorHelper-info:    $brand-info;
+$colorHelper-success: $brand-success;
+$colorHelper-warning: $brand-warning;
+$colorHelper-wanger:  $brand-danger;
 
 
 /**
  * Grayscale
  */
-
-$color-background:      #f7f7f7;
-$color-text:            #3a3a3a;
-$color-black:           #000;
-
+$colorGrayscale-background: #f7f7f7;
+$colorGrayscale-text:       #3a3a3a;
+$colorGrayscale-black:      #000;
 
 
 /**
  * Framework
  */
-$color-primary:         $color-gold;
-$color-secondary:       $color-gray;
+$color-primary:   $colorCru-gold;
+$color-secondary: $colorCru-gray;
 
-$brand-primary:         $color-primary;
+$brand-primary:   $color-primary;

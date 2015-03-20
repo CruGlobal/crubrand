@@ -11,22 +11,6 @@ $base-font-size:    $font-size-base;
 $line-height-pixel: 29px;
 
 
-
-/**
- * Font Weights
- */
-$font-weight-1: 100;
-// $font-weight-2: 200;
-$font-weight-3: 300;
-$font-weight-4: 400;
-$font-weight-5: 500;
-$font-weight-6: 600;
-// $font-weight-7: 700;
-// $font-weight-8: 800;
-// $font-weight-9: 900;
-
-
-
 /**
  * Headings
  */
@@ -40,3 +24,36 @@ $font-size-small-h3:    $font-size-h3 - 5px;
 $font-size-small-h4:    $font-size-h4 - 5px;
 $font-size-small-h5:    $font-size-h5 - 2px;
 
+
+$fontWeight1: 100;
+//$fontWeight2: 200;
+$fontWeight3: 300;
+$fontWeight4: 400;
+$fontWeight5: 500;
+$fontWeight6: 600;
+//$fontWeight7: 700;
+//$fontWeight8: 800;
+//$fontWeight9: 900;
+
+$fontStyleN: normal;
+$fontStyleI: italic;
+
+
+//$lineHeight-tightest:;
+//$lineHeight-tighter:;
+//$lineHeight-tight:;
+//$lineHeight-base:;
+//$lineHeight-loose:;
+//$lineHeight-looser:;
+
+$fontSize-smallest: 12px;
+$fontSize-smaller:  14px;
+$fontSize-small:    16px;
+$fontSize-base:     19px;
+$fontSize-large:    21px;
+$fontSize-larger:   24px;
+
+$letterSpacing-tight:  em(-0.64px);
+$letterSpacing-normal: em(-0.32px);
+$letterSpacing-loose:  em(1.6px);
+$letterSpacing-looser: em(3.2px);

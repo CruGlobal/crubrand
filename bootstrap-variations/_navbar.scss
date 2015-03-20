@@ -11,7 +11,7 @@ $gold-bar-size: 3px;
 .navbar {
     // Prevent floats from breaking the navbar
     @include clearfix;
-    
+
     position: relative;
     min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
     margin-bottom: $navbar-margin-bottom;
@@ -46,13 +46,13 @@ $gold-bar-size: 3px;
 // content for the user's viewport.
 .navbar-collapse {
     @include clearfix;
-     
+
     overflow-x: visible;
     padding-right: $navbar-padding-horizontal;
     padding-left:  $navbar-padding-horizontal;
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    
+
     -webkit-overflow-scrolling: touch;
 
     &.in {
@@ -71,7 +71,7 @@ $gold-bar-size: 3px;
             padding-bottom: 0; // Override default setting
             overflow: visible !important;
         }
-        
+
         &.in {
             overflow-y: visible;
         }
@@ -98,7 +98,7 @@ $gold-bar-size: 3px;
     @media (min-width: $grid-float-breakpoint) {
         border-radius: 0;
     }
-    
+
     .navbar-collapse {
         max-height: $navbar-collapse-max-height;
 
@@ -175,14 +175,14 @@ $gold-bar-size: 3px;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
     border: 1px solid $navbar-default-toggle-border-color;
     border-radius: $border-radius-base;
-    
+
     @include navbar-vertical-align(34px);
-    
-    
+
+
     @media (min-width: $grid-float-breakpoint) {
         display: none;
     }
-    
+
     &:hover,
     &:focus {
         background-color: $navbar-default-toggle-hover-bg;
@@ -226,7 +226,7 @@ $gold-bar-size: 3px;
             background-color: $navbar-default-link-hover-bg;
         }
     }
-    
+
     > li > a {
         padding-top:    10px;
         padding-bottom: 10px;
@@ -250,7 +250,7 @@ $gold-bar-size: 3px;
             background-color: $navbar-default-link-disabled-bg;
         }
     }
-    
+
     // Remove background color from open dropdown
     > .open a {
         &,
@@ -266,7 +266,7 @@ $gold-bar-size: 3px;
     // Add a class to ensure links outside the navbar nav are colored correctly.
     .navbar-link {
         color: $navbar-default-link-color;
-        
+
         &:hover {
             color: $navbar-default-link-hover-color;
         }
@@ -274,7 +274,7 @@ $gold-bar-size: 3px;
 
     .btn-link {
         color: $navbar-default-link-color;
-        
+
         &:hover,
         &:focus {
             color: $navbar-default-link-hover-color;
@@ -299,16 +299,16 @@ $gold-bar-size: 3px;
             background-color: transparent;
             border: 0;
             box-shadow: none;
-            
+
             // scss-lint:disable SelectorDepth
             > li > a,
             .dropdown-header {
                 padding: 5px 15px 5px 25px;
             }
-            
+
             > li > a {
                 line-height: $line-height-computed;
-            
+
                 // scss-lint:disable NestingDepth
                 &:hover,
                 &:focus {
@@ -327,7 +327,7 @@ $gold-bar-size: 3px;
 
         > li {
             float: left;
-            
+
             > a {
                 padding-top:    $navbar-padding-vertical;
                 padding-bottom: $navbar-padding-vertical;
@@ -345,19 +345,19 @@ $gold-bar-size: 3px;
 .navbar-form {
     // Mixin behavior for optimum display
     @include form-inline;
-    
+
     margin-left: -$navbar-padding-horizontal;
     margin-right: -$navbar-padding-horizontal;
     padding: 10px $navbar-padding-horizontal;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     $shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-    
+
     @include box-shadow($shadow);
-    
+
     // Vertically center in expanded, horizontal navbar
     @include navbar-vertical-align($input-height-base);
-    
+
     // Undo 100% width for pull classes
     @media (min-width: $grid-float-breakpoint) {
         width: auto;
@@ -366,7 +366,7 @@ $gold-bar-size: 3px;
         margin-right: 0;
         padding-top: 0;
         padding-bottom: 0;
-        
+
         @include box-shadow(none);
     }
 
@@ -408,7 +408,7 @@ $gold-bar-size: 3px;
     &.btn-sm {
         @include navbar-vertical-align($input-height-small);
     }
-    
+
     &.btn-xs {
         @include navbar-vertical-align(22);
     }
@@ -421,7 +421,7 @@ $gold-bar-size: 3px;
 
 .navbar-text {
     color: $navbar-default-color;
-    
+
     @include navbar-vertical-align($line-height-computed);
 
     @media (min-width: $grid-float-breakpoint) {
@@ -444,7 +444,7 @@ $gold-bar-size: 3px;
     .navbar-left {
         float: left !important;
     }
-    
+
     .navbar-right {
         float: right !important;
         margin-right: -$navbar-padding-horizontal;
@@ -468,9 +468,9 @@ $gold-bar-size: 3px;
     * background-color: $navbar-default-bg;
     * border-color: $navbar-default-border;
     */
-    background-color: $color-white;
-    border-top: $gold-bar-size solid $color-gold;
-    
+    background-color: $colorCru-white;
+    border-top: $gold-bar-size solid $colorCru-gold;
+
     @include box-shadow($navbar-box-shadow);
 
     @media (max-width: $grid-float-breakpoint-max) {
@@ -505,7 +505,7 @@ $gold-bar-size: 3px;
                 }
             }
         }
-    }    
+    }
 }
 
 .navbar-brand {
@@ -524,4 +524,3 @@ $gold-bar-size: 3px;
 }
 
 // Inverse navbar has been removed for cru.org
-

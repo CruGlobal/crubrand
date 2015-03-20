@@ -7,8 +7,8 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$brand-primary: $color-gold;
-$brand-warning: lighten($color-orange, 10%);
+$brand-primary: $colorCru-gold;
+$brand-warning: lighten($colorCru-orange, 10%);
 
 
 
@@ -21,10 +21,10 @@ $brand-warning: lighten($color-orange, 10%);
 //** Background color for `<body>`.
 $body-bg:          #f7f7f7;
 //** Global text color on `<body>`.
-$text-color:       $color-text;
+$text-color:       $colorGrayscale-text;
 
 //** Global textual link color.
-$link-color:       $color-blue-deep;
+$link-color:       $colorCru-blueDeep;
 
 //** Link hover color set via `darken()` function.
 $link-hover-color: darken($link-color, 10%);
@@ -346,10 +346,10 @@ $navbar-default-bg:                  #fff;
 $navbar-default-border:              darken($navbar-default-bg, 6.5%);
 
 // Navbar links
-$navbar-default-link-color:          $color-text;
-$navbar-default-link-hover-color:    $color-gold;
+$navbar-default-link-color:          $colorGrayscale-text;
+$navbar-default-link-hover-color:    $colorCru-gold;
 $navbar-default-link-hover-bg:       #404040;
-$navbar-default-link-active-color:   $color-gold;
+$navbar-default-link-active-color:   $colorCru-gold;
 $navbar-default-link-active-bg:      #404040;
 $navbar-default-link-disabled-color: #ccc;
 $navbar-default-link-disabled-bg:    transparent;
@@ -360,7 +360,7 @@ $navbar-default-brand-hover-color:   darken($navbar-default-brand-color, 10%);
 $navbar-default-brand-hover-bg:      transparent;
 
 // Navbar toggle
-$navbar-default-toggle-icon-bar-bg:  $color-text;
+$navbar-default-toggle-icon-bar-bg:  $colorGrayscale-text;
 $navbar-default-toggle-border-color: none;
 
 
@@ -378,7 +378,7 @@ $nav-link-padding:                       5px 10px;
 $nav-tabs-border-color:                   #e9e9e9;
 
 $nav-tabs-active-link-hover-bg:           $nav-tabs-border-color;
-$nav-tabs-active-link-hover-color:        $color-text;
+$nav-tabs-active-link-hover-color:        $colorGrayscale-text;
 $nav-tabs-active-link-hover-border-color: darken($nav-tabs-border-color, 5%);
 
 
