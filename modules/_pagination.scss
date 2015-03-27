@@ -9,19 +9,11 @@
 
 /**
  * This is to override bootstraps specifity of pagiation. Normally this
- * level of nesting would not be allowed.
+ * level of nesting would not be allowed. 
  */
- .pagination-primary li a {
-    @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
- }
-
- .pagination-secondary li a {
-     @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
- }
-
- .pagination-subtle li a {
-     @include button-variant($btn-subtle-color, $btn-subtle-bg, $btn-subtle-border);
- }
+.pagination-secondary li a {
+    @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
 
 .pagination__prev {
     float: left;
@@ -43,3 +35,4 @@
 .pagination__next a:after {
     content: "\00A0" "\00BB";
 }
+
