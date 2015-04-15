@@ -11,7 +11,11 @@
  * This is to override bootstraps specifity of pagiation. Normally this
  * level of nesting would not be allowed.
  */
-.pagination-secondary li a {
+ .pagination-primary li a {
+    @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+ }
+
+ .pagination-secondary li a {
      @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
  }
 
