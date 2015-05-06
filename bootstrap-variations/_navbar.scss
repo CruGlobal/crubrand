@@ -296,7 +296,6 @@ $gold-bar-size: 3px;
             float: none;
             width: auto;
             margin-top: 0;
-            background-color: transparent;
             border: 0;
             box-shadow: none;
 
@@ -385,9 +384,19 @@ $gold-bar-size: 3px;
 // Dropdown menus
 
 // Menu position and menu carets
+// Custom colors because navbar dropdowns are colored different than regular dropdowns
 .navbar-nav > li > .dropdown-menu {
+    background-color: $navbar-default-link-hover-bg;
+    border-color: $navbar-default-link-hover-bg;
     margin-top: 0;
     @include border-top-radius(0);
+    > li a {
+        &:hover,
+        &:focus {
+            color: $colorText;
+            background-color: $colorCru-gold;
+        }
+    }
 }
 
 // Menu position and menu caret support for dropups via extra dropup class
@@ -477,13 +486,14 @@ $gold-bar-size: 3px;
         // Dropdowns get custom display when collapsed
         .open .dropdown-menu {
             // scss-lint:disable SelectorDepth NestingDepth
-            > li a {
-                color: $navbar-default-link-color;
 
+            // For touch device users to see their selection after clicking
+            > li a {
                 &:hover,
+                &:active,
                 &:focus {
-                    color: $navbar-default-link-hover-color;
-                    background-color: $navbar-default-link-hover-bg;
+                    color: $colorText;
+                    background-color: $colorCru-gold;
                 }
             }
 
