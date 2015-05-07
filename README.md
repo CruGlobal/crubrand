@@ -17,6 +17,19 @@ The recommended installation method is Bower, but you can install the project vi
 
 ### Install using Bower:
 
+Create a bower.json file that lists crubrand as a dependency and change the values to fit your project:
+
+    {
+      "name": "your-project-name",
+      "description": "Your-project-description",
+      "version": "your-project-version",
+      "dependencies": {
+        "crubrand": "latest-release"
+      }
+    }
+    
+If you already have a bower.json file run the following command:
+
     $ bower install --save crubrand
 
 Once installed, `@import` into your project:
