@@ -21,7 +21,7 @@ If you already have an existing `bower.json` file, run the following command:
 
     $ bower install --save crubrand
 
-Otherwise, create a bower project. If you are not sure what to enter in the prompts, use the default values (by hitting enter):
+Otherwise, create a bower project. If you are not sure what to enter in the prompts, use the default values (by hitting return):
 
     $ bower init
 
