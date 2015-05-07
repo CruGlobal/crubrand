@@ -21,16 +21,20 @@ If you already have an existing `bower.json` file, run the following command:
 
     $ bower install --save crubrand
 
-Otherwise, create a file named `bower.json` with the following content and change the values to fit your project:
+Otherwise, create a bower project:
 
-    {
-      "name": "your-project-name",
-      "description": "Your-project-description",
-      "version": "your-project-version",
-      "dependencies": {
-        "crubrand": "latest-release"
-      }
-    }
+    $ bower init
+
+After installing the project, install crubrand as a dependency:
+
+    $ bower install --save crubrand
+    
+You can change the release number to meet your needs.
+
+When needed you can update crurband using Bower. You may need to change the release number in the `bower.json` file
+if you are updating to a new version.
+
+    bower update
 
 Once installed, `@import` into your project's main scss file:
 
@@ -50,7 +54,3 @@ The least recommended option for installation is to simply download
 `crubrand` into your project and `@import` it into your project.
 
     @import "crubrand/crubrand";
-
-## Updating crubrand using Bower
-
-    bower update crubrand
