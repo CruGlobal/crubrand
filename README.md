@@ -31,7 +31,7 @@ After installing the project, install crubrand as a dependency:
     
 You can change the release number to meet your needs. For more information about release numbers see [this project](https://github.com/npm/node-semver)
 
-When needed you can update crurband using Bower. You may need to change the release number in the `bower.json` file
+When needed you can update cruband using Bower. You may need to change the release number in the `bower.json` file
 if you are updating to a new version.
 
     bower update
