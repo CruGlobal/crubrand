@@ -17,11 +17,11 @@ The recommended installation method is Bower, but you can install the project vi
 
 ### Install using Bower:
 
-If you already have an existing bower.json file, run the following command:
+If you already have an existing `bower.json` file, run the following command:
 
     $ bower install --save crubrand
 
-Otherwise, create a bower.json file that lists crubrand as a dependency and change the values to fit your project:
+Otherwise, create a file named `bower.json` with the following content and change the values to fit your project:
 
     {
       "name": "your-project-name",
