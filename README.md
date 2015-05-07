@@ -17,7 +17,11 @@ The recommended installation method is Bower, but you can install the project vi
 
 ### Install using Bower:
 
-Create a bower.json file that lists crubrand as a dependency and change the values to fit your project:
+If you already have an existing bower.json file, run the following command:
+
+    $ bower install --save crubrand
+
+Otherwise, create a bower.json file that lists crubrand as a dependency and change the values to fit your project:
 
     {
       "name": "your-project-name",
@@ -27,12 +31,8 @@ Create a bower.json file that lists crubrand as a dependency and change the valu
         "crubrand": "latest-release"
       }
     }
-    
-If you already have a bower.json file run the following command:
 
-    $ bower install --save crubrand
-
-Once installed, `@import` into your project:
+Once installed, `@import` into your project's main scss file:
 
     @import "bower_components/crubrand/crubrand";
 
