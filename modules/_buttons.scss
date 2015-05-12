@@ -56,9 +56,11 @@
     }
 }
 
-.btn-facebook,
-.btn-google,
-.btn-twitter {
+
+// Social Media Sign-In
+
+.btnSocial {
+  width: 100%;
 
   &,
   &:hover {
@@ -67,18 +69,18 @@
   
   &:hover {
     opacity: 0.8;
-    filter: alpha(opacity=80); /* For IE8 and earlier */
+      filter: alpha(opacity=80);
   }
 }
 
-.btn-facebook {
-  background-color: $facebook;
+.btnSocial--facebook {
+  background-color: #4d6a9c;
 }
 
-.btn-google {
-  background-color: $googleplus;
+.btnSocial--google {
+  background-color: #d85740;
 }
 
-.btn-twitter {
-  background-color: $twitter;
+.btnSocial--twitter {
+  background-color: #2aafe1;
 }
