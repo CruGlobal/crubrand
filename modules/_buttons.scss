@@ -55,3 +55,30 @@
         background-color: #6d6e71;
     }
 }
+
+.btn-facebook,
+.btn-google,
+.btn-twitter {
+
+  &,
+  &:hover {
+    color: $colorCru-white;
+  }
+  
+  &:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+  }
+}
+
+.btn-facebook {
+  background-color: #4d6a9c;
+}
+
+.btn-google {
+  background-color: #d85740;
+}
+
+.btn-twitter {
+  background-color: #2aafe1;
+}
