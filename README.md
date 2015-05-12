@@ -39,6 +39,9 @@ if you are updating to a new version.
 Once installed, `@import` into your project's main scss file:
 
     @import "bower_components/crubrand/crubrand";
+    
+You can [see a sample project](https://github.com/CruGlobal/crubrand-web-template) with examples of a basic and more involved way to use crubrand
+
 
 ### Install as a Git Submodule
 
