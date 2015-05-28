@@ -10,6 +10,13 @@ $font-size-base:    16px;
 $base-font-size:    $font-size-base;
 $line-height-pixel: 29px;
 
+/**
+ * Font Family
+ */
+$font-family-numerals:     "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
 
 /**
  * Headings
@@ -23,6 +30,13 @@ $font-size-small-h2:    $font-size-h2 - 8px;
 $font-size-small-h3:    $font-size-h3 - 5px;
 $font-size-small-h4:    $font-size-h4 - 5px;
 $font-size-small-h5:    $font-size-h5 - 2px;
+
+
+
+
+$fontFamily-badges:     $font-family-numerals;
+
+
 
 
 $fontWeight1: 100;
