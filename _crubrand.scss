@@ -177,7 +177,9 @@
 @import "bootstrap-variations/pager";
 
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/labels";
-@import "../bootstrap-sass-official/assets/stylesheets/bootstrap/badges";
+
+@import "bootstrap-variations/badges";
+
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/jumbotron";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/thumbnails";
 @import "../bootstrap-sass-official/assets/stylesheets/bootstrap/alerts";
