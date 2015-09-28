@@ -1,6 +1,6 @@
 {
   "name": "crubrand",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "homepage": "https://github.com/CruGlobal/crubrand",
   "authors": [
     "Elikem Adadevoh <elikem@gmail.com>",
@@ -23,6 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "3.3.1"
+    "bootstrap-sass-official": "3.3.5"
   }
 }
