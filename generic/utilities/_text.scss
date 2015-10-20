@@ -79,6 +79,14 @@
 .u-textWeight-bold, %u-textWeight-bold           { font-weight: $fontWeight6 !important; }
 
 
+
+/**
+ * Font weights
+ */
+.u-textUnderline, %u-textUnderline { text-decoration: underline; }
+
+
+
 /**
  * Apply capital case to an element (usually a `strong`).
  */

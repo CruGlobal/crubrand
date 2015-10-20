@@ -55,3 +55,32 @@
         background-color: #6d6e71;
     }
 }
+
+
+// Social Media Sign-In
+
+.btnSocial {
+  width: 100%;
+
+  &,
+  &:hover {
+    color: $colorCru-white;
+  }
+  
+  &:hover {
+    opacity: 0.8;
+      filter: alpha(opacity=80);
+  }
+}
+
+.btnSocial--facebook {
+  background-color: $facebook;
+}
+
+.btnSocial--google {
+  background-color: $googleplus;
+}
+
+.btnSocial--twitter {
+  background-color: $twitter;
+}
